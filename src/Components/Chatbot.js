@@ -4,12 +4,7 @@ import userimage from "../images/dp.png";
 
 function Chatbot() {
   const [chatbot, setChatbot] = useState(false);
-  const [messages, setMessages] = useState([
-    [
-      "hello there I am fine",
-      "how are you I am finedfsdfasfdafdsddddddddddddddddddddddddddd",
-    ],
-  ]);
+  const [messages, setMessages] = useState([]);
   const toggleChatbot = () => {
     setChatbot(!chatbot);
   };
@@ -87,6 +82,7 @@ function Chatbot() {
             <div className="chat-footer">
               <form onSubmit={handleSend} method="post">
                 <input
+                  autoComplete="off"
                   id="message"
                   type="text"
                   className="input-message"
