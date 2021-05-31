@@ -12,7 +12,7 @@ body {
   position: fixed;
   z-index: 9999;
   background: #f0f2f5;
-  animation: expand 1s ease;
+  animation: expand 0.4s ease;
 }
 @keyframes expand {
   from {
@@ -108,6 +108,9 @@ body {
   outline: 0;
   border-bottom-right-radius: 6px;
 }
+.chat-footer button:hover {
+  background-color: #013c77;
+}
 .result {
   padding: 10px;
   width: 40%;
@@ -145,4 +148,7 @@ body {
 .chat-button .msg {
   width: 60%;
   line-height: 70px;
+}
+button {
+  cursor: pointer;
 }

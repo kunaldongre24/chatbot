@@ -31,7 +31,11 @@ function Chatbot() {
               </div>
             </div>
             <div className="chat-footer">
-              <input type="text" className="input-message" />
+              <input
+                type="text"
+                className="input-message"
+                placeholder="Ask something here..."
+              />
               <button type="submit">Send</button>
             </div>
           </div>
